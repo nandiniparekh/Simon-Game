@@ -1,0 +1,136 @@
+/* CSS Stylesheet */
+
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Title Section */
+.level-title {
+  font-size: 3rem;
+  margin: 5%;
+  margin-bottom: 10px;
+}
+
+/* Buttons Sections */
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #ff1616;
+}
+
+.green {
+  background-color: #7ed957;
+}
+
+.blue {
+  background-color: #38b6ff;
+}
+
+.yellow {
+  background-color: #ffee59;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.font-size {
+  font-size: 1.5rem;
+}
+
+.border {
+  border: 3px solid white;
+}
+
+/* Pop-up box Section */
+.close-box {
+  display: none;
+}
+
+.message-box {
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  background-color: #277bc0;
+  margin: 0px 160px;
+  padding: 32px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 28px;
+  border-radius: 100%;
+  background-color: white;
+  color: #277bc0;
+  border: 2px solid #277bc0;
+}
+
+.close-icon {
+  padding: 3px;
+}
+
+/* Footer Setion */
+.footer-btns {
+  margin: 20px 80px;
+  padding: 5px 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Responsive styles */
+@media (max-width: 1060px) {
+  .level-title {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    height: 150px;
+    width: 150px;
+  }
+
+  .font-size {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .level-title {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  .font-size {
+    font-size: 1.5rem;
+  }
+
+  .message-box {
+    font-size: 1.3rem;
+    margin: 0px 30px;
+  }
+}

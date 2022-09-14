@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Simon Game</title>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/d56f6be8e1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Title  -->
+    <h1 class="level-title">Press A Key to Start</h1>
+
+    <!-- Game Buttons  -->
+    <div class="container">
+      <div lass="row">
+        <div type="button" id="red" class="btn red border"></div>
+        <div type="button" id="blue" class="btn blue border"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow border"></div>
+        <div type="button" id="green" class="btn green border"></div>
+      </div>
+    </div>
+
+    <!-- Footer items -->
+    <div>
+      <p id="score" class="font-size"></p>
+      <button type="button" class="help footer-btns font-size">
+        Help
+      </button>
+      <button type="button" class="quit footer-btns font-size">
+        Quit
+      </button>
+    </div>
+
+    <!-- Rules pop-up -->
+    <div class="message-box font-size border">
+      <button type="button" class="close font-size">
+        <i class="fa-solid fa-xmark close-icon"></i>
+      </button>
+      <p>How to play?</p>
+      <p>
+        Repeat the pattern. Each advancing level will be accompanied with a new
+        button flashing. The players must remember the sequence created and
+        click all the buttons in the right order including the button that
+        flashed at the start of the level.
+      </p>
+      <p>
+        Pay close attention as the game gets more difficult as you reach higher
+        levels.
+      </p>
+    </div>
+
+    <!-- jQuery and JS scripts  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js" charset="utf-8"></script>
+  </body>
+
+  <footer><i class="fa-regular fa-copyright"></i> 2022 Nandini Parekh</footer>
+</html>
